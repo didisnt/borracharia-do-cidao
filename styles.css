@@ -1,0 +1,31 @@
+/* Custom animation for WhatsApp button */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.whatsapp-pulse {
+    animation: pulse 2s infinite;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hero section background overlay */
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 10px;
+}
+
+/* Service card hover effect */
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.service-card {
+    transition: all 0.3s ease;
+}

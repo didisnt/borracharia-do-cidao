@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borracharia do Cidão</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans bg-gray-100">
+    <!-- Header/Navigation -->
+    <header class="bg-black text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <i class="fas fa-tire text-yellow-500 text-2xl mr-2"></i>
+                <h1 class="text-xl font-bold">Borracharia do Cidão</h1>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+            
+            <!-- Navigation -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#services" class="hover:text-yellow-500 transition">Serviços</a>
+                <a href="#about" class="hover:text-yellow-500 transition">Sobre Nós</a>
+                <a href="#pricing" class="hover:text-yellow-500 transition">Preços</a>
+                <a href="#contact" class="hover:text-yellow-500 transition">Contato</a>
+            </nav>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black pb-4 px-4">
+            <a href="#services" class="block py-2 hover:text-yellow-500 transition">Serviços</a>
+            <a href="#about" class="block py-2 hover:text-yellow-500 transition">Sobre Nós</a>
+            <a href="#pricing" class="block py-2 hover:text-yellow-500 transition">Preços</a>
+            <a href="#contact" class="block py-2 hover:text-yellow-500 transition">Contato</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+<section class="relative bg-gray-900 text-white">
+    <!-- Background image com filtros -->
+    <div class="absolute inset-0 bg-[url('imagens/Captura de tela 2025-04-30 220533.png')] bg-cover bg-center filter brightness-50 blur-sm">
+        <img src="./imagens/ChatGPT Image 30 de abr. de 2025, 23_11_44.png" alt="" srcset="">
+    </div>
+    <div class="absolute inset-0 hero-overlay"></div>
+    
+    <div class="container mx-auto px-4 py-24 relative z-10">
+        <div class="max-w-2xl">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Pneus Usados de Qualidade</h2>
+            <p class="text-xl mb-8">Na Borracharia do Cidão, oferecemos os melhores pneus usados e serviços de borracharia com preço justo e atendimento personalizado.</p>
+            
+            <!-- WhatsApp CTA Button -->
+            <a href="https://wa.me/5531996684616"
+            class="whatsapp-pulse inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full transition">
+                <i class="fab fa-whatsapp text-xl mr-2"></i>
+                Fale Conosco pelo WhatsApp
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Nossos Serviços</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+                    <img src="./imagens/pneu-1-300x200.jpg" 
+                        alt="Pneus Usados" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Pneus Usados Para Carros é motos.</h3>
+                        <p class="text-gray-600 mb-4">Vendemos pneus usados de qualidade, com garantia e procedência. Ótima opção para quem busca economia sem abrir mão da segurança.</p>
+                        <a href="https://wa.me/5531996684616" class="text-yellow-600 font-medium hover:text-yellow-700 transition">Ver preços</a>
+                    </div>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+                    <img src="./imagens/227b90c1518e8fd68ff2ef0b65f762d5.jpg" 
+                        alt="Colagem de Pneus" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Colagem de Pneus</h3>
+                        <p class="text-gray-600 mb-4">Serviço profissional de colagem de pneus, tanto para pneus sem câmara quanto com câmara. Utilizamos materiais de alta qualidade.</p>
+                        <a href="https://wa.me/5531996684616" class="text-yellow-600 font-medium hover:text-yellow-700 transition">Ver preços</a>
+                    </div>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+                    <img src="./imagens/vulcanizar-pneus.jpg" 
+                        alt="Manutenção de Rodas" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Vulcanizamento de Pneus</h3>
+                        <p class="text-gray-600 mb-4">Oferecemos serviço de vulcanização com qualidade, segurança e agilidade para seus pneus!.</p>
+                        <a href="https://wa.me/5531996684616" class="text-yellow-600 font-medium hover:text-yellow-700 transition">Ver preços</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="./imagens/ChatGPT Image 30 de abr. de 2025, 23_11_44.png" 
+                        alt="Borracharia do Cidão" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6">Sobre a Borracharia do Cidão</h2>
+                    <p class="text-gray-700 mb-4">Há mais de 15 anos no mercado, a Borracharia do Cidão se destaca pela qualidade dos serviços e atendimento personalizado.</p>
+                    <p class="text-gray-700 mb-4">Nosso objetivo é oferecer soluções em pneus e colagens com preço justo, honestidade e transparência, garantindo a satisfação dos nossos clientes.</p>
+                    <p class="text-gray-700 mb-6">Trabalhamos apenas com pneus usados de procedência, que passam por rigorosa avaliação antes de serem disponibilizados para venda.</p>
+                    
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Qualidade Garantida</span>
+                        </div>
+                        <div class="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
+                            <i class="fas fa-dollar-sign text-yellow-500 mr-2"></i>
+                            <span>Preço Justo</span>
+                        </div>
+                        <div class="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
+                            <i class="fas fa-clock text-blue-500 mr-2"></i>
+                            <span>Atendimento Rápido</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">CONSULTE NOSSOS PREÇOS...</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Price Card 1 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden border border-gray-200">
+                    <div class="bg-black text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">Pneus Usados, CARRO / MOTO</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold">CONSULTE VALORES...</span>
+                            
+                        </div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Pneus de qualidade</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Vários tamanhos disponíveis</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Garantia sobre nossos Produtos</span>
+                            </li>
+                        </ul>
+                        <p class="text-sm text-gray-500 mb-4">*Preço pode variar conforme tamanho e estado do pneu</p>
+                        <a href="https://wa.me/5531996684616"
+                        class="block text-center bg-yellow-600 hover:bg-yellow-700 text-white font-medium py-2 px-4 rounded transition">
+                            Consultar Preços
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Price Card 2 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden border border-gray-200">
+                    <div class="bg-black text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">Serviços de Colagem</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold">CONSULTE VALORES...</span>
+                            
+                        </div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Colagem profissional</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Material de qualidade</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Garantia no serviço</span>
+                            </li>
+                        </ul>
+                        <p class="text-sm text-gray-500 mb-4">*Preço pode variar conforme tamanho do pneu</p>
+                        <a href="https://wa.me/5531996684616"
+                            class="block text-center bg-yellow-600 hover:bg-yellow-700 text-white font-medium py-2 px-4 rounded transition">
+                            Consultar Preços
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Price Card 3 -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden border border-gray-200">
+                    <div class="bg-black text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">Cameras de AR / Bico Sem Camera</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold">CONSULTE VALORES...</span>
+                            
+                        </div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Cameras de Ar Novas</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Cameras de AR Seminovas</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Bico Sem Camera</span>
+                            </li>
+                        </ul>
+                        <p class="text-sm text-gray-500 mb-4">*Preço pode variar conforme Produtos necessário</p>
+                        <a href="https://wa.me/5531996684616" 
+                            class="block text-center bg-yellow-600 hover:bg-yellow-700 text-white font-medium py-2 px-4 rounded transition">
+                            Consultar Preços
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">O Que Nossos Clientes Dizem</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center">
+                            <i class="fas fa-user text-2xl text-gray-400"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">João Silva</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Comprei pneus usados na Borracharia do Cidão e estou muito satisfeito. O atendimento foi excelente e os pneus estão em ótimo estado."</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center">
+                            <i class="fas fa-user text-2xl text-gray-400"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Maria Oliveira</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Serviço de colagem feito com perfeição. Meu pneu estava furado e eles resolveram rapidamente. Recomendo a todos!"</p>
+                </div>
+                
+        
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12">Entre em Contato</h2>
+                
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/2">
+                        <h3 class="text-xl font-bold mb-4">Informações de Contato</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-yellow-600 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-medium">Endereço</h4>
+                                    <p class="text-gray-600">Rua Wembley N: 1245, Esperança (Justinópolis),</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-phone-alt text-yellow-600 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-medium">Telefone</h4>
+                                    <p class="text-gray-600">(31) 99668-4616</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-clock text-yellow-600 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-medium">Horário de Funcionamento</h4>
+                                    <p class="text-gray-600">Segunda a Sabado: 9h às 20h</p>
+                                    <p class="text-gray-600">Domingo: 9h às 14h</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h3 class="text-xl font-bold mb-4">Nos Encontre</h3>
+                            <div class="aspect-w-16 aspect-h-9">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.739308122283!2d-44.0249528!3d-19.7763523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa68dd42c9629af%3A0x7e90ec4f06890177!2sR.%20Wembley%2C%201245%20-%20Esperan%C3%A7a%20(Justin%C3%B3polis)%2C%20Ribeir%C3%A3o%20das%20Neves%20-%20MG%2C%2033913-250!5e0!3m2!1spt-BR!2sbr!4v1697040000000!5m2!1spt-BR!2sbr" 
+                                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" class="rounded-lg shadow"></iframe>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2">
+                        <div class="bg-gray-100 p-6 rounded-lg shadow-sm">
+                            <h3 class="text-xl font-bold mb-6">Mande uma mensagem</h3>
+                            
+                            <p class="mb-6 text-gray-700">Clique no botão para falar diretamente pelo WhatsApp.</p>
+                            
+                            <a href="https://wa.me/5531996684616" 
+                            class="whatsapp-pulse w-full flex items-center justify-center bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full transition mb-6">
+                                <i class="fab fa-whatsapp text-xl mr-2"></i>
+                                Falar pelo WhatsApp
+                            </a>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center">
+                        <i class="fas fa-tire text-yellow-500 text-2xl mr-2"></i>
+                        <h3 class="text-xl font-bold">Borracharia do Cidão</h3>
+                    </div>
+                    <p class="text-gray-400 mt-2">Pneus usados e serviços de borracharia com qualidade.</p>
+                </div>
+                
+                <div class="flex space-x-4">
+                    
+                    <a href="https://wa.me/5531996684616" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-6 text-center text-gray-400">
+
+                <p>&copy; Criador do site :
+                <b>jean carlos</b> 
+                <p> Contato: 
+                    <b>(31) 99726-2119</b>
+                </p>
+            </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5531996684616" 
+        class="fixed bottom-6 right-6 bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-700 transition z-50">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
